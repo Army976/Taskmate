@@ -43,7 +43,7 @@
               <input value="" id="task-{{ obj.id }}" type="checkbox" checked="checked" onclick="location.href={% url 'pending_task' obj.id %}">
             </div>
           </td>
-          <td class="col-7">{{ obj.task }}</td>
+          <td class="col-7"><del>{{ obj.task }}</del></td>
           <td class="col-1"><a href="{% url 'edit_task' obj.id %}"><button type="button" class="btn btn-outline-primary">Edit</button></a></td>
           <td class="col-1"><a href="{% url 'delete_task' obj.id %}"><button type="button" class="btn btn-danger">Delete</button></a></td>
         </tr>
