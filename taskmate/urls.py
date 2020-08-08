@@ -8,4 +8,5 @@ urlpatterns = [
     path('task/', include('todolist.urls')),
     path('contact', todolist_views.contact, name='contact'),
     path('about', todolist_views.about, name='about'),
+    path('account/', include('users.urls')),
 ]
